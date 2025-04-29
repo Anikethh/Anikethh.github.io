@@ -11,7 +11,7 @@
     <div class="container">
         <header>
             <div class="profile">
-                <img src="IMG_9347.jpg" alt="Profile Picture" class="profile-img">
+                <img src="assets/IMG_9347.jpg" alt="Profile Picture" class="profile-img">
                 <h1>Aniketh</h1>
                 <p class="designation">Researcher</p>
                 <p class="organization">TCS Research</p>
@@ -30,27 +30,19 @@
                 [Your brief introduction here. Write about your research interests, current work, and aspirations.]
             </p>
             <div class="cv-link">
-                <a href="cv.pdf" target="_blank">View CV <i class="fas fa-external-link-alt"></i></a>
+                <a href="assets/cv.pdf" target="_blank">View CV <i class="fas fa-external-link-alt"></i></a>
             </div>
         </section>
 
         <section class="publications">
             <h2>Publications</h2>
             <div class="publication-item">
-                <img src="paper-thumbnail.jpg" alt="Paper Thumbnail">
-                <div class="publication-content">
-                    <h3>Publication Title</h3>
-                    <p>Brief abstract of the publication goes here. This should be a concise summary of your work.</p>
-                    <a href="#" target="_blank">Read More →</a>
-                </div>
-            </div>
-            <div class="publication-item">
-                <img src="arxiv-logo.png" alt="arXiv Preprint Thumbnail">
+                <img src="assets/IRIS.png" alt="IRIS Preprint Thumbnail">
                 <div class="publication-content">
                     <h3>IRIS: Interactive Research Ideation System for Accelerating Scientific Discovery <span style="font-size:0.8em; color:#888;">[Preprint]</span></h3>
                     <p><strong>Authors:</strong> Aniketh Garikaparthi, Manasi Patwardhan, Lovekesh Vig, Arman Cohan</p>
-                    <p><strong>Abstract:</strong> The rapid advancement in capabilities of large language models (LLMs) raises a pivotal question: How can LLMs accelerate scientific discovery? This work tackles the crucial first stage of research, generating novel hypotheses. While recent work on automated hypothesis generation focuses on multi-agent frameworks and extending test-time compute, none of the approaches effectively incorporate transparency and steerability through a synergistic Human-in-the-loop (HITL) approach. To address this gap, we introduce IRIS: Interactive Research Ideation System, an open-source platform designed for researchers to leverage LLM-assisted scientific ideation. IRIS incorporates innovative features to enhance ideation, including adaptive test-time compute expansion via Monte Carlo Tree Search (MCTS), fine-grained feedback mechanism, and query-based literature synthesis. Designed to empower researchers with greater control and insight throughout the ideation process. We additionally conduct a user study with researchers across diverse disciplines, validating the effectiveness of our system in enhancing ideation.</p>
-                    <a href="https://arxiv.org/abs/2504.16728" target="_blank">Read on arXiv →</a>
+                    <a href="https://arxiv.org/abs/2504.16728" target="_blank" class="pub-btn">Read on arXiv →</a>
+                    <a href="https://github.com/Anikethh/IRIS-Interactive-Research-Ideation-System" target="_blank" class="pub-btn">Code on GitHub <i class="fab fa-github"></i></a>
                 </div>
             </div>
             <!-- Add more publication items as needed -->
@@ -58,3 +50,23 @@
     </div>
 </body>
 </html>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const expandBtn = document.querySelector('.expand-abstract');
+    const shortAbstract = document.querySelector('.abstract-short');
+    const fullAbstract = document.querySelector('.abstract-full');
+    if (expandBtn && shortAbstract && fullAbstract) {
+        expandBtn.addEventListener('click', function() {
+            if (fullAbstract.style.display === 'none') {
+                fullAbstract.style.display = 'block';
+                expandBtn.innerHTML = '&#9650;'; // up arrow
+                shortAbstract.style.display = 'none';
+            } else {
+                fullAbstract.style.display = 'none';
+                expandBtn.innerHTML = '&#9660;'; // down arrow
+                shortAbstract.style.display = 'block';
+            }
+        });
+    }
+});
+</script>
