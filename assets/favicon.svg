@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="8" fill="#f4f4f3" />
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+        font-family="SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+        font-size="28" fill="#6a707c" style="font-feature-settings: 'zero' 1">01</text>
+</svg>
