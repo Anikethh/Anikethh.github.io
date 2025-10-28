@@ -139,7 +139,7 @@ h3 {
 .publications-section {
     display: flex;
     flex-direction: column;
-    gap: var(--line-step);
+    /* gap: var(--line-step); */
 }
 
 .publications-section > h2 {
