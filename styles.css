@@ -32,7 +32,7 @@ p { line-height: inherit; }
 .intro-section { display: flex; justify-content: space-between; align-items: flex-start; gap: clamp(2.4rem, 7vw, 4.2rem); }
 .intro-text { flex: 1 1 auto; display: flex; flex-direction: column; gap: var(--line-step); }
 .intro-profile { flex: 0 0 clamp(220px, 28vw, 260px); display: flex; flex-direction: column; gap: 0.5rem; position: relative; }
-.profile-img { display: block; width: clamp(180px, 25vw, 210px); height: clamp(180px, 25vw, 210px); object-fit: cover; }
+.profile-img { display: block; width: clamp(170px, 24vw, 200px); height: clamp(170px, 24vw, 200px); object-fit: cover; }
 h1, h2, h3 { font-size: 1em; font-weight: 600; color: var(--ink); }
 .line-text { max-width: 70ch; color: var(--ink-soft); }
 .publications-section .line-text { max-width: none; }
